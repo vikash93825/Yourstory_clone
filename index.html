@@ -75,6 +75,40 @@
 
         }
 
+        .dropbtn {
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 110px;
+            background: #999;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 5px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         /*first part*/
 
         #blank {
@@ -181,7 +215,7 @@
             width: 60%;
             margin: 10px;
             margin-left: 30px;
-            height:92vh ;
+            height: 92vh;
         }
 
         .right {
@@ -377,46 +411,263 @@
             font-size: 15px;
             width: 50px;
         }
+
         /*boxModel*/
-        .boxModel{
-            height: 50vh;
-            border:1px solid red;
-            margin-top:10px ;
-            
+        .boxModel {
+            margin-top: 10px;
+
         }
-        .hr-Line{
-            display:flex;
+
+        .hr-Line {
+            display: flex;
             flex-direction: row;
             width: 90%;
-            border:1px brown dashed;
-            margin:10px auto;  
+            margin: 10px auto;
         }
-        .justify{
+
+        .justify {
             text-align: right;
-            margin-left:45% ;
+            margin-left: 45%;
             width: 90px;
-            padding-top:10px;
+            padding-top: 10px;
         }
-        .justify button{
+
+        .justify button {
             border-color: red;
             background: white;
-            padding:5px;
-            color:red;
+            padding: 5px;
+            color: red;
             border-radius: 5px;
             outline: none;
         }
-        .hr-Line div{
-            border:1px blue dashed;
+
+        /*.hr-Line div{
+            border:1px solid #777;
+
+        }*/
+        .vr-Line {
+            display: flex;
+            flex-direction: row;
+            width: 92%;
+            margin: 10px auto;
+            height: 350px;
+        }
+
+        .vr-Line>div {
+            border: 1px solid rgb(230, 226, 219);
+            width: 28%;
+            height: 95%;
+            margin: 10px;
+            border-radius: 6px;
 
         }
 
-        /*footer
-            #footer{
-                display: flex;
-                flex-direction: row;
-                border:1px solid red;
-                clear:both
-            }*/
+        .vr-Line>div:hover {
+            transform: scale(1.1);
+        }
+
+        .vr-img {
+            position: relative;
+        }
+
+        .vr-img img {
+            width: 96%;
+            height: 40%;
+            border-radius: 6px;
+        }
+
+        .date {
+            position: absolute;
+            top: 150px;
+            left: 10px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .vr-para {
+            text-align: left;
+            font-size: 18px;
+            margin: 30px 10px;
+            color: rgba(0, 0, 0, 0.89);
+            height: 90px;
+        }
+
+        .vr-para:hover {
+            color: black;
+            text-shadow: 1px 0px 0px black;
+
+        }
+
+        .up>a {
+            text-align: left;
+            font-size: 13px;
+            /*margin:15px 10px;*/
+            position: absolute;
+            left: 10px;
+            padding: 5px 5px;
+            color: red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: rgb(231, 220, 220);
+        }
+
+        /*footer*/
+
+
+        .footer {
+            font-size: 1rem;
+            padding: 1rem 2.5rem;
+            position: relative;
+            z-index: 998;
+            background: rgb(250, 250, 250);
+        }
+
+
+        .djzKat {
+            list-style-type: none;
+            padding-left: 0px;
+            display: flex;
+        }
+
+
+        .jFmMxT {
+            cursor: pointer;
+            list-style: none;
+            padding-top: 0px;
+            display: inline-flex;
+            margin-right: 15px;
+        }
+
+        .dpJgUH {
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 1 auto;
+            flex-flow: row wrap;
+            margin-right: -0.5rem;
+            margin-left: -0.5rem;
+        }
+
+        .hkZEVf {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+
+        .jcGquD {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            margin: auto 0px;
+            word-break: break-word;
+        }
+
+        .bDJjtj {
+            height: 1rem;
+            display: block;
+            width: 100%;
+        }
+
+        .bDJjtj {
+            height: 1rem;
+            display: block;
+            width: 100%;
+        }
+
+        .duViur {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .eqhAGO {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: normal;
+            color: rgba(0, 0, 0, 0.64);
+            text-transform: none;
+        }
+
+        .blhvKE {
+            height: 3rem;
+            width: 10rem;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1rem;
+            line-height: 2rem;
+            border-radius: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            border-color: rgb(255, 255, 255);
+            background: rgb(242, 63, 45);
+        }
+
+        .jJhcgF {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+
+        .dezyPd {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            height: 2.2rem;
+            font-weight: 500;
+            margin: auto 0px;
+        }
+
+        .ajuXh {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            line-height: 2rem;
+        }
+
+        .idvZhz {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+
+        .footer-2 {
+            position: relative;
+            padding: 1rem 2.5rem;
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            text-align: center;
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: 0.875rem;
+            z-index: 998;
+        }
+
+        .jTtfKf {
+            display: none;
+        }
+
+        .dLkjsU {
+            display: none;
+            position: fixed;
+            bottom: 0px;
+            z-index: 997;
+            width: 100vw;
+        }
+
+        .brwXXW {
+            padding: 5px 0px;
+            height: 3.125rem;
+            display: none;
+            text-align: center;
+            background: rgb(249, 250, 249);
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -447,20 +698,43 @@
             <div class="topic col">SMBStory</div>
             <div class="topic col">YourStoryTv</div>
             <div class="topic" id="more">
-                <div class="moreList">More</div>
-                <select>
-                    <option></option>
-                    <option>Companies</option>
-                    <option>Advertise with us</option>
-                    <option>Makers-India</option>
-                    <option>Autostory</option>
-                    <option>Mystory</option>
-                    <option>Weekender</option>
-                    <option>Journal</option>
-                </select>
+                <div class="moreList"></div>
+                <div class="dropdown">
+                    <div class="dropbtn">More</div>
+                    <div class="dropdown-content">
+                        <a href="#">Companies</a>
+                        <a href="#">Advertise With Us</a>
+                        <a href="#">Makers-India</a>
+                        <a href="#">AutoStory</a>
+                        <a href="#">MyStory</a>
+                        <a href="#"> Weekender</a>
+                        <a href="#">Journal</a>
+                        <a href="#">YS Korea</a>
+                        <a href = "#">Deutschland</a>
+                        <a href="#"> Germany</a>
+                        <a href="#">Events</a>
+                    </div>
+                </div>
             </div>
             <div class="topic grow"></div>
-            <div class="t2 topic">English</div>
+            <div class="t2 topic">
+                <div class="dropdown">
+                    <div class="dropbtn">English</div>
+                    <div class="dropdown-content">
+                        <a href="#">Kannada</a>
+                        <a href="#">Hindi</a>
+                        <a href="#">Tamil</a>
+                        <a href="#">Asamiya</a>
+                        <a href="#">Bangla</a>
+                        <a href="#">Gujarati</a>
+                        <a href="#">Malayalam</a>
+                        <a href="#">Marathi</a>
+                        <a href="#">Odia</a>
+                        <a href="#">Punjabi</a>
+                        <a href="#">Telugu</a>
+                    </div>
+                </div>
+            </div>
             <div class="topic" id="lang">
                 <div class="alpha">அ</div>
                 <div class="alpha">अ</div>
@@ -623,42 +897,522 @@
             </div>
         </div>
 
-        
+
 
         <div class="boxModel">
             <div class="hr-Line">
-                <div><img src="https://images.yourstory.com/assets/icons/ic_startup.svg" style="width:40px;padding-top:5px;"></div>
-                <div style="margin-left:10px"> 
+                <div><img src="https://images.yourstory.com/assets/icons/ic_startup.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
                     <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">Startup</div>
-                    <div style="font-size:15px;color: gray;">Deep-dive stories of changemakers and innovators from the startup ecosystem</div>
+                    <div style="font-size:15px;color: gray;">Deep-dive stories of changemakers and innovators from the
+                        startup ecosystem</div>
                 </div>
                 <div class="justify"><button>SEE MORE</button></div>
             </div>
             <div class="vr-Line">
-                <div>
-            
-                </div>
-                <div>
+                <div class="vr-img">
 
+                    <img
+                        src="https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/Evage-pic-1600260624940.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/a054f1302d6c11e9aa979329348d4c3e/AtmanirbharIndia-15-1600098778182.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/dc9aa1302d6c11e9aa979329348d4c3e/TeamPrecisely1-1600080772393.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/79900dd0d91311e8a16045a90309d734/HJ-profile-1600097256633.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="hr-Line">
+                <div><img src="https://images.yourstory.com/assets/icons/ic_new.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
+                    <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">Latest Stories
+                    </div>
+                    <div style="font-size:15px;color: gray;">Latest published stories, interviews, and updates across
+                        YourStory properties</div>
+                </div>
+                <div class="justify"><button>SEE MORE</button></div>
+            </div>
+            <div class="vr-Line">
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/e641e900925711e9926177f451727da9/Imageoc4z-1596548194654.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Imagei0po-1600264972188.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Funding alert] Brinton Pharmaceuticals raises Rs 10 Cr debt from BlackSoil Capital
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/Evage-pic-1600260624940.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/5/803961002d6d11e9aa979329348d4c3e/Final-1600248990050.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">COMMUNITY</a></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="hr-Line">
+                <div><img src="https://images.yourstory.com/assets/icons/ic_stories.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
+                    <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">Interview</div>
+                    <div style="font-size:15px;color: gray;">Conversations with entrepreneurs, leaders, influencers, and
+                        changemakers</div>
+                </div>
+                <div class="justify"><button>SEE MORE</button></div>
+            </div>
+            <div class="vr-Line">
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/e641e900925711e9926177f451727da9/Imageoc4z-1596548194654.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/77e43870d62911eaa8e9879653a67226/ronnie-1600349784921.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Funding alert] Brinton Pharmaceuticals raises Rs 10 Cr debt from BlackSoil Capital
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/21/e1da3a20368f11ea8ceed32dbcb77ccc/Imagebrdb-1592219482530-1592670073468.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/5/803961002d6d11e9aa979329348d4c3e/Final-1600248990050.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">COMMUNITY</a></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="hr-Line">
+                <div><img src="https://images.yourstory.com/assets/icons/ic_stories.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
+                    <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">Expert Opinion
+                    </div>
+                    <div style="font-size:15px;color: gray;">Analysis and opinion pieces by guest authors, contributors,
+                        experts</div>
+                </div>
+                <div class="justify"><button>SEE MORE</button></div>
+            </div>
+            <div class="vr-Line">
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/e641e900925711e9926177f451727da9/Imageoc4z-1596548194654.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Imagei0po-1600264972188.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Funding alert] Brinton Pharmaceuticals raises Rs 10 Cr debt from BlackSoil Capital
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/Evage-pic-1600260624940.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/5/803961002d6d11e9aa979329348d4c3e/Final-1600248990050.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">COMMUNITY</a></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="hr-Line">
+                <div><img src="https://images.yourstory.com/assets/icons/ic_stories.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
+                    <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">Just In</div>
+                    <div style="font-size:15px;color: gray;">Analysis and opinion pieces by guest authors, contributors,
+                        experts</div>
+                </div>
+                <div class="justify"><button>SEE MORE</button></div>
+            </div>
+            <div class="vr-Line">
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/e641e900925711e9926177f451727da9/Imageoc4z-1596548194654.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Imagei0po-1600264972188.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Funding alert] Brinton Pharmaceuticals raises Rs 10 Cr debt from BlackSoil Capital
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/Evage-pic-1600260624940.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/5/803961002d6d11e9aa979329348d4c3e/Final-1600248990050.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">COMMUNITY</a></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="hr-Line">
+                <div><img src="https://images.yourstory.com/assets/icons/ic_stories.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
+                    <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">In Depth</div>
+                    <div style="font-size:15px;color: gray;">Long-form, data-driven articles and analysis on key trends
+                        in the tech, innovation, and entrepreneurial ecosystem</div>
+                </div>
+                <div class="justify"><button>SEE MORE</button></div>
+            </div>
+            <div class="vr-Line">
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/e641e900925711e9926177f451727da9/Imageoc4z-1596548194654.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Imagei0po-1600264972188.jpg?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Funding alert] Brinton Pharmaceuticals raises Rs 10 Cr debt from BlackSoil Capital
+                    </div>
+                    <div class="up"><a href="#">FUNDING</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/Evage-pic-1600260624940.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#"> STARTUP</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/5/803961002d6d11e9aa979329348d4c3e/Final-1600248990050.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">COMMUNITY</a></div>
+                </div>
+            </div>
+
+
+            <div class="hr-Line">
+                <div><img src="https://images.yourstory.com/assets/icons/ic_stories.svg"
+                        style="width:40px;padding-top:5px;"></div>
+                <div style="margin-left:10px">
+                    <div style="font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;">Inspiration
+                    </div>
+                    <div style="font-size:15px;color: gray;">Stories of people and events that inspire hope, ignite
+                        change, and spread positivity</div>
+                </div>
+                <div class="justify"><button>SEE MORE</button></div>
+            </div>
+            <div class="vr-Line">
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/fintech-1599641536708.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        Building a secure infrastructure for FinTech innovation in India
+                    </div>
+                    <div class="up"><a href="#">OPINION</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/sales-coronavirus-1600769345519.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        Why the COVID-19 crisis is a great time to up your sales game
+                    </div>
+                    <div class="up"><a href="#">OPINION</a></div>
+                </div>
+
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/supply-chain-1589207659945-1600172667977.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        Agile supply chain, supported by a robust storage infrastructure, is vital in the post-COVID era
+                    </div>
+                    <div class="up"><a href="#"> OPINION</a></div>
+                </div>
+                <div class="vr-img">
+
+                    <img
+                        src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/Untitleddesign-1600760917262.png?fm=png&auto=format&ar=2:1&mode=crop&crop=faces">
+                    <div class="date">16th sep 2020</div>
+                    <div class="vr-para">
+                        [Startup Bharat] Chandigarh-based EVage is driving towards a greener future with its
+                        Made-in-India four-wheeler
+                    </div>
+                    <div class="up"><a href="#">OPINION</a></div>
                 </div>
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-        <footer id="footer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <footer>
+            <div>
+                <div id="footer">
+                    <ul class="sc-dTsoBL djzKat">
+                        <li class="sc-btewqU jFmMxT"><a href="https://twitter.com/YourStoryCo" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://images.yourstory.com/assets/images/social_icons/twitter2x.png"
+                                    class="sc-gCUMDz fcMPms"></a></li>
+                        <li class="sc-btewqU jFmMxT"><a href="https://www.instagram.com/yourstory_com/" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://images.yourstory.com/assets/images/social_icons/instagram2x.png"
+                                    class="sc-gCUMDz fcMPms"></a></li>
+                        <li class="sc-btewqU jFmMxT"><a href="https://facebook.com/YourStoryCom" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://images.yourstory.com/assets/images/social_icons/facebook2x.png"
+                                    class="sc-gCUMDz fcMPms"></a></li>
+                        <li class="sc-btewqU jFmMxT"><a href="https://linkedin.com/company/yourstory-com"
+                                target="_blank" rel="noopener noreferrer"><img
+                                    src="https://images.yourstory.com/assets/images/social_icons/linkedin2x.png"
+                                    class="sc-gCUMDz fcMPms"></a></li>
+                        <li class="sc-btewqU jFmMxT"><a href="https://www.youtube.com/yourstorytv" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://images.yourstory.com/assets/images/social_icons/youtube2x.png"
+                                    class="sc-gCUMDz fcMPms"></a></li>
+                    </ul>
+                </div>
+                <div class="sc-EHOje dpJgUH">
+                    <div class="sc-bZQynM hkZEVf">
+                        <h3 class="sc-fjdhpX jcGquD"><span>Didn't find what you were looking for?</span></h3>
+                        <div class="sc-htoDjs bDJjtj"></div>
+                        <div class="sc-iRbamj eqhAGO">Search for what you want, categories, tags, keywords, authors,
+                            events, anything under YourStory<div class="sc-htoDjs bDJjtj"></div>
+                        </div><a disable="0" class="sc-VigVT duViur" href="/search"><button width="10"
+                                class="sc-cmthru blhvKE"><span>SEARCH</span></button></a>
+                        <div class="sc-htoDjs bDJjtj"></div>
+                    </div>
+                    <div class="sc-bZQynM jJhcgF">
+                        <h4 class="sc-fATqzn dezyPd"><span>Topics</span></h4>
+                        <div class="sc-jbWsrJ ajuXh">
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/category/ys-startup"><span class="sc-jDwBTQ kPJsKT">Startups</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/tag/appfriday"><span class="sc-jDwBTQ kPJsKT">App Friday</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/category/techie-tuesdays"><span class="sc-jDwBTQ kPJsKT">Techie
+                                        Tuesdays</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/category/ys-in-depth"><span class="sc-jDwBTQ kPJsKT">In Depth</span></a>
+                            </div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/category/funding"><span class="sc-jDwBTQ kPJsKT">Funding
+                                        Investments</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/category/resources"><span class="sc-jDwBTQ kPJsKT">Resources</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/category/ys-expert-opinion"><span class="sc-jDwBTQ kPJsKT">Expert
+                                        Opinion</span></a></div>
+                        </div>
+                        <div class="sc-htoDjs bDJjtj"></div>
+                    </div>
+                    <div class="sc-bZQynM idvZhz">
+                        <h4 class="sc-fATqzn dezyPd"><span>About</span></h4>
+                        <div class="sc-jbWsrJ ajuXh">
+                            <div class="sc-gLdKKF fIAMEV"><a href="https://brands.yourstory.com/" target="_blank"
+                                    rel="noopener noreferrer"><span>Advertise with us</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/about-us"><span>About</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur" href="/team"><span>Meet
+                                        the team</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/report-an-issue"><span>Report an issue</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a href="https://support.yourstory.com/" target="_blank"
+                                    rel="noopener noreferrer"><span>Support Center</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a disable="0" class="sc-VigVT duViur"
+                                    href="/contact-us"><span>Contact Us</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a href="https://yourstory.com/jobs" target="_blank"
+                                    rel="noopener noreferrer"><span>Work with us</span></a></div>
+                            <div class="sc-gLdKKF fIAMEV"><a href="https://events.yourstory.com/" target="_blank"
+                                    rel="noopener noreferrer"><span>Events</span></a></div>
+                        </div>
+                        <div class="sc-htoDjs bDJjtj"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-RWGNv footer-2">
+                <div class="sc-EHOje dpJgUH">
+                    <div class="sc-bZQynM bNGQBb">© 2020 </div>
+                    <div class="sc-bZQynM bNGQBb"> YourStory Media Pvt. Ltd.</div>
+                    <div class="sc-bZQynM bNGQBb">
+                        <div class="sc-eNQAEJ bkxihC"><a color="#ef4136"
+                                href="https://support.yourstory.com/article/11-privacy-policy-latest"
+                                class="sc-ckVGcZ ktYgJL"><span>Privacy Policy</span></a></div>
+                    </div>
+                    <div class="sc-bZQynM bNGQBb">
+                        <div class="sc-eNQAEJ bkxihC"><span class="sc-imapFV fpbYbw">v
+                                <!-- -->2.2.802</span></div>
+                    </div>
+                </div>
+                <div class="sc-eNQAEJ bkxihC">Built with <span class="sc-imapFV fpbYbw"> ♥ </span> in India</div>
+            </div>
         </footer>
     </div>
     <script type="text/javascript" src="jsfile.js"></script>
